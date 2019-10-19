@@ -24,5 +24,6 @@ module.exports = {
     'babel'
   ],
   rules: {
+    "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
   },
 };

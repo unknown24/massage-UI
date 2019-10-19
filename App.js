@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, Text } from "react-native";
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { View, Text } from 'react-native';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+import FullScreen from './screens/FullScreen';
 
-import FullScreen from './screens/FullScreen'
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -15,7 +15,7 @@ class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Home Screen</Text>
       </View>
     );
@@ -24,11 +24,11 @@ class HomeScreen extends React.Component {
 
 const AppNavigator = createStackNavigator({
   Home: {
-    screen: HomeScreen
+    screen: HomeScreen,
   },
-  FullScreen
+  FullScreen,
 }, {
-  initialRouteName: 'FullScreen'
-})
+  initialRouteName: 'FullScreen',
+});
 
 export default createAppContainer(AppNavigator);
